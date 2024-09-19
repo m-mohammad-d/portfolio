@@ -1,0 +1,157 @@
+.my-skill {
+  padding: 20px;
+}
+
+.my-skill__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.my-skill__skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.my-skill__skill {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.my-skill__skill img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.my-skill__skill h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.my-skill__skill p {
+  font-size: 1rem;
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .my-skill__title {
+    font-size: 1.5rem;
+  }
+
+  .my-skill__skill img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .my-skill__skill h2 {
+    font-size: 1.2rem;
+  }
+
+  .my-skill__skill p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large mobile devices and small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .my-skill__title {
+    font-size: 1.8rem;
+  }
+
+  .my-skill__skill img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .my-skill__skill h2 {
+    font-size: 1.3rem;
+  }
+
+  .my-skill__skill p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Large tablets and small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .my-skill__title {
+    font-size: 2rem;
+  }
+
+  .my-skill__skill img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .my-skill__skill h2 {
+    font-size: 1.4rem;
+  }
+
+  .my-skill__skill p {
+    font-size: 1rem;
+  }
+}
+
+/* Large laptops and medium desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .my-skill__title {
+    font-size: 2.2rem;
+  }
+
+  .my-skill__skill img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .my-skill__skill h2 {
+    font-size: 1.5rem;
+  }
+
+  .my-skill__skill p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .my-skill__title {
+    font-size: 2.4rem;
+  }
+
+  .my-skill__skill img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .my-skill__skill h2 {
+    font-size: 1.6rem;
+  }
+
+  .my-skill__skill p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Very large screens */
+@media (min-width: 1441px) {
+  .my-skill__title {
+    font-size: 2.6rem;
+  }
+
+  .my-skill__skill img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .my-skill__skill h2 {
+    font-size: 1.8rem;
+  }
+
+  .my-skill__skill p {
+    font-size: 1.3rem;
+  }
+}

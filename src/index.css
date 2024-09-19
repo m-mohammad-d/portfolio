@@ -1,0 +1,43 @@
+:root {
+  /* Background Colors */
+  --background-color: #1e1e2f;
+
+  /* Text Colors */
+  --primary-text-color: #e0e0e0;
+  --secondary-text-color: #a0a0b0;
+
+  /* Accent Colors */
+  --link-color: #4d88ff;
+  --accent-color: #ff6f61;
+
+  /* Border and Divider */
+  --border-color: #2e2e3f;
+  /* Header Titles */
+  --header-color: #ffffff;
+
+  /* Sample Usage */
+}
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--header-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  border: 1px solid var(--border-color);
+}
+
+.border {
+  border-bottom: 1px solid var(--border-color);
+}

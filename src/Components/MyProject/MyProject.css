@@ -1,0 +1,82 @@
+.my-project {
+  padding: 20px;
+}
+
+.my-project__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+
+.my-project__projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two columns */
+  gap: 30px;
+}
+
+.my-project__project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.my-project__project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-project__image {
+  width: 100%;
+  height: 70%;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.my-project__name {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.my-project__description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.my-project__github {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.my-project__github:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .my-project__title {
+    font-size: 1.5rem;
+  }
+
+  .my-project__projects {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .my-project__title {
+    font-size: 1.25rem;
+  }
+
+  .my-project__projects {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+}

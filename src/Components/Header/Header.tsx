@@ -1,11 +1,11 @@
-import styles from "./Header.module.css";
+import "./Header.css";
 
 // Header component that displays a heading, a detailed introduction, and an image
 function Header() {
   return (
-    <header className={styles.header}>
+    <header className="header">
       {/* Container for the textual information */}
-      <div className={styles.infoContainer}>
+      <div className="infoContainer">
         <h1>Hi, I'm Mohammad</h1>
         <p>about me</p>
         <p>
@@ -20,11 +20,11 @@ function Header() {
       </div>
 
       {/* Container for the image */}
-      <div className={styles.imageContainer}>
+      <div className="imageContainer">
         <img
           src="/Programmer-amico.svg" // Path to the SVG image file
           alt="Programmer" // Alternative text for accessibility
-          className={styles.image} // CSS class for styling the image
+          className="image" // CSS class for styling the image
         />
       </div>
     </header>

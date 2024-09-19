@@ -5,6 +5,7 @@
   align-items: center;
   padding: 20px;
   gap: 8rem;
+
   margin-top: 5rem;
 }
 
@@ -42,12 +43,16 @@
 }
 
 /* Media Queries for responsive design */
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
+  .header {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
   .header {
     flex-direction: column;
     gap: 2rem;
-    padding: 15px;
-    margin-top: 2rem;
   }
 
   .infoContainer,
@@ -60,6 +65,23 @@
   .infoContainer {
     margin-bottom: 2rem; /* Space between text and image */
   }
+}
+
+@media (max-width: 768px) {
+  .infoContainer h1 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .infoContainer p {
+    font-size: 1rem; /* Smaller font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 15px;
+    margin-top: 2rem;
+  }
 
   .infoContainer h1 {
     font-size: 1.5rem; /* Further reduced font size for very small screens */
@@ -67,33 +89,5 @@
 
   .infoContainer p {
     font-size: 0.9rem; /* Further reduced font size for very small screens */
-  }
-}
-
-@media (max-width: 1023px) {
-  .header {
-    gap: 4rem;
-  }
-
-  .infoContainer h1 {
-    font-size: 2rem; /* Smaller font size for medium screens */
-  }
-
-  .infoContainer p {
-    font-size: 1rem; /* Smaller font size for medium screens */
-  }
-}
-
-@media (max-width: 1200px) {
-  .header {
-    gap: 8rem;
-  }
-
-  .infoContainer h1 {
-    font-size: 2.5rem; /* Default font size for larger screens */
-  }
-
-  .infoContainer p {
-    font-size: 1.2rem; /* Default font size for larger screens */
   }
 }

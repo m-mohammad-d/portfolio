@@ -5,6 +5,7 @@ import { useState } from "react";
 function Header() {
   const { t, i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const handleLanguageChange = (event) => {
     const newLanguage = event.target.value;
@@ -12,11 +13,18 @@ function Header() {
     i18n.changeLanguage(newLanguage);
   };
 
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <header className="header">
       <nav className="navbar">
         <div className="navbar__logo">My Portfolio</div>
-        <ul className="navbar__links">
+        <div className="hamburger" onClick={toggleSidebar}>
+          &#9776; {/* Hamburger icon */}
+        </div>
+        <ul className={`navbar__links ${isSidebarOpen ? "active" : ""}`}>
           <li className="navbar__item">
             <a href="#home" className="navbar__link">
               {t("navbar.home")}
@@ -38,6 +46,11 @@ function Header() {
             </a>
           </li>
         </ul>
+      </nav>
+      <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+        <button className="close-btn" onClick={toggleSidebar}>
+          &times; {/* Close icon */}
+        </button>
         <div className="language-selector">
           <select
             value={selectedLanguage}
@@ -48,7 +61,29 @@ function Header() {
             <option value="fa">فارسی</option>
           </select>
         </div>
-      </nav>
+        <ul className="sidebar__links">
+          <li className="sidebar__item">
+            <a href="#home" className="sidebar__link">
+              {t("navbar.home")}
+            </a>
+          </li>
+          <li className="sidebar__item">
+            <a href="#projects" className="sidebar__link">
+              {t("navbar.projects")}
+            </a>
+          </li>
+          <li className="sidebar__item">
+            <a href="#about" className="sidebar__link">
+              {t("navbar.about")}
+            </a>
+          </li>
+          <li className="sidebar__item">
+            <a href="#contact" className="sidebar__link">
+              {t("navbar.contact")}
+            </a>
+          </li>
+        </ul>
+      </div>
       <div className="contentWrapper">
         <div className="infoContainer">
           <h1>{t("header.greeting")}</h1>

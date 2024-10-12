@@ -1,10 +1,14 @@
 .header {
-  display: flex;
   height: 100vh;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
   gap: 8rem;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 10rem;
 }
 
 .infoContainer {
@@ -16,6 +20,8 @@
 .imageContainer {
   flex: 1;
   max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
   text-align: right;
 }
 
@@ -40,7 +46,6 @@
   margin-bottom: 0;
 }
 
-/* Media Queries for responsive design */
 @media (max-width: 1200px) {
   .header {
     gap: 4rem;
@@ -61,17 +66,17 @@
   }
 
   .infoContainer {
-    margin-bottom: 2rem; /* Space between text and image */
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .infoContainer h1 {
-    font-size: 2rem; /* Smaller font size for smaller screens */
+    font-size: 2rem;
   }
 
   .infoContainer p {
-    font-size: 1rem; /* Smaller font size for smaller screens */
+    font-size: 1rem;
   }
 }
 
@@ -82,10 +87,73 @@
   }
 
   .infoContainer h1 {
-    font-size: 1.5rem; /* Further reduced font size for very small screens */
+    font-size: 1.5rem;
   }
 
   .infoContainer p {
-    font-size: 0.9rem; /* Further reduced font size for very small screens */
+    font-size: 0.9rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__item {
+  position: relative;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar__link:hover {
+  color: #61dafb;
+}
+
+.language-selector {
+  color: white;
+}
+
+.language-selector__dropdown {
+  padding: 5px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.language-selector__dropdown:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__links {
+    flex-direction: column;
+    gap: 10px;
   }
 }

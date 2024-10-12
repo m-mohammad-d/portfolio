@@ -1,4 +1,3 @@
-
 {
   "header": {
     "greeting": "Hi, I'm Mohammad",
@@ -65,5 +64,11 @@
     "email": "Email",
     "message": "Message",
     "send": "Send Message"
+  },
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
   }
 }

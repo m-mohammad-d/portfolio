@@ -1,0 +1,69 @@
+
+{
+  "header": {
+    "greeting": "Hi, I'm Mohammad",
+    "aboutMe": "About Me",
+    "description": "I'm a frontend developer with a strong interest in creating intuitive and responsive user interfaces. My expertise includes working with modern web technologies such as HTML, CSS, and JavaScript, as well as popular frameworks like React. I am dedicated to improving user experience through well-crafted design and performant code. Outside of development, I enjoy exploring new technologies and contributing to open-source projects."
+  },
+  "skills": {
+    "title": "My Skills",
+    "react": {
+      "name": "React",
+      "description": "A JavaScript library for building user interfaces, especially single-page applications."
+    },
+    "javascript": {
+      "name": "JavaScript",
+      "description": "A versatile scripting language used for creating dynamic and interactive web content."
+    },
+    "typescript": {
+      "name": "TypeScript",
+      "description": "A superset of JavaScript that adds static types to the language, improving development efficiency."
+    },
+    "git": {
+      "name": "Git",
+      "description": "A version control system for tracking changes in source code during software development."
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "course": {
+      "name": ".course",
+      "description": "DotCourse is a comprehensive educational platform designed to provide an efficient and user-friendly experience for students, instructors, and admins. It features dedicated dashboards for each user role and a variety of essential functionalities.",
+      "links": {
+        "demo": "Watch Online",
+        "source": "View Source Code"
+      }
+    },
+    "nexium": {
+      "name": "Nexium",
+      "description": "A dynamic web-based desktop environment that brings a desktop-like experience to your browser. Nexium provides a user-friendly and interactive workspace where you can manage apps, customize your desktop, and create and edit files seamlessly.",
+      "links": {
+        "demo": "Watch Online",
+        "source": "View Source Code"
+      }
+    },
+    "azogeh": {
+      "name": "Azogeh",
+      "description": "Discover the finest selection of food products at Azogeh. From fresh produce to gourmet specialties, our curated collection offers something for every palate. Explore high-quality ingredients that bring exceptional taste and nutrition to your kitchen.",
+      "links": {
+        "demo": "Coming Soon",
+        "source": "View Source Code"
+      }
+    },
+    "threeJs": {
+      "name": "Three.js Project",
+      "description": "A detailed 3D model of a historical sword, meticulously recreated using Three.js. This project showcases the intricate design and craftsmanship of the sword through interactive 3D visualization. Explore the beauty and complexity of this ancient weapon in a fully immersive environment.",
+      "links": {
+        "demo": "Watch Online",
+        "source": "View Source Code"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  }
+}

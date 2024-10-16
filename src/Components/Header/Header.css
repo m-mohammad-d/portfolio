@@ -91,11 +91,17 @@
 }
 
 .language-selector__dropdown {
-  padding: 5px;
-  background-color: #61dafb;
+  padding: 8px;
+  background-color: var(--link-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+language-selector__dropdown option{
+  color: transparent;
+}
+language-selector__dropdown option:hover{
+  color: transparent;
 }
 
 .language-selector__dropdown:focus {

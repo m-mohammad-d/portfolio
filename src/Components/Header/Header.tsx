@@ -46,6 +46,16 @@ function Header() {
             </a>
           </li>
         </ul>
+        <div className="language-selector">
+          <select
+            value={selectedLanguage}
+            onChange={handleLanguageChange}
+            className="language-selector__dropdown"
+          >
+            <option value="en">English</option>
+            <option value="fa">فارسی</option>
+          </select>
+        </div>
       </nav>
       <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
         <button className="close-btn" onClick={toggleSidebar}>

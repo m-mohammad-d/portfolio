@@ -1,0 +1,74 @@
+{
+  "header": {
+    "greeting": "你好，我是Mohammad",
+    "aboutMe": "关于我",
+    "description": "我是一名前端开发人员，热衷于创建直观和响应迅速的用户界面。我的专业包括使用现代网页技术，如HTML、CSS和JavaScript，以及流行的框架，如React。我致力于通过精心设计和高性能的代码来改善用户体验。除了开发之外，我喜欢探索新技术并为开源项目做出贡献。"
+  },
+  "skills": {
+    "title": "我的技能",
+    "react": {
+      "name": "React",
+      "description": "一个用于构建用户界面的JavaScript库，尤其是单页面应用程序。"
+    },
+    "javascript": {
+      "name": "JavaScript",
+      "description": "一种多用途脚本语言，用于创建动态和交互式网页内容。"
+    },
+    "typescript": {
+      "name": "TypeScript",
+      "description": "JavaScript的一个超集，为语言添加了静态类型，提高了开发效率。"
+    },
+    "git": {
+      "name": "Git",
+      "description": "一个版本控制系统，用于跟踪软件开发过程中源代码的变化。"
+    }
+  },
+  "projects": {
+    "title": "我的项目",
+    "course": {
+      "name": ".课程",
+      "description": "DotCourse是一个综合教育平台，旨在为学生、讲师和管理员提供高效和用户友好的体验。它为每个用户角色提供专门的仪表板和多种基本功能。",
+      "links": {
+        "demo": "在线观看",
+        "source": "查看源代码"
+      }
+    },
+    "nexium": {
+      "name": "Nexium",
+      "description": "一个动态的基于网络的桌面环境，将桌面体验带入您的浏览器。Nexium提供了一个用户友好和交互式的工作空间，您可以在其中管理应用程序、定制桌面，以及无缝创建和编辑文件。",
+      "links": {
+        "demo": "在线观看",
+        "source": "查看源代码"
+      }
+    },
+    "azogeh": {
+      "name": "Azogeh",
+      "description": "在Azogeh发现最优质的食品产品。从新鲜农产品到美食特色，我们的精选系列为每种口味提供了选择。探索高质量的成分，为您的厨房带来卓越的味道和营养。",
+      "links": {
+        "demo": "敬请期待",
+        "source": "查看源代码"
+      }
+    },
+    "threeJs": {
+      "name": "Three.js项目",
+      "description": "使用Three.js精心重建的历史剑的详细3D模型。该项目通过交互式3D可视化展示了剑的精致设计和工艺。探索这种古老武器的美丽和复杂性，体验完全沉浸的环境。",
+      "links": {
+        "demo": "在线观看",
+        "source": "查看源代码"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我",
+    "name": "姓名",
+    "email": "电子邮件",
+    "message": "留言",
+    "send": "发送消息"
+  },
+  "navbar": {
+    "home": "首页",
+    "projects": "项目",
+    "about": "关于",
+    "contact": "联系"
+  }
+}

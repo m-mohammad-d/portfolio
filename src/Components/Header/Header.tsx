@@ -55,6 +55,7 @@ function Header() {
             <option value="en">English</option>
             <option value="fa">فارسی</option>
             <option value="ES">España</option>
+            <option value="CN">中国</option>
           </select>
         </div>
       </nav>
@@ -62,17 +63,6 @@ function Header() {
         <button className="close-btn" onClick={toggleSidebar}>
           &times; {/* Close icon */}
         </button>
-        <div className="language-selector">
-          <select
-            value={selectedLanguage}
-            onChange={handleLanguageChange}
-            className="language-selector__dropdown"
-          >
-            <option value="en">English</option>
-            <option value="fa">فارسی</option>
-            <option value="ES">España</option>
-          </select>
-        </div>
         <ul className="sidebar__links">
           <li className="sidebar__item">
             <a href="#home" className="sidebar__link">
@@ -95,6 +85,18 @@ function Header() {
             </a>
           </li>
         </ul>
+        <div className="language-selector-mobile">
+          <select
+            value={selectedLanguage}
+            onChange={handleLanguageChange}
+            className="language-selector__dropdown"
+          >
+            <option value="en">English</option>
+            <option value="fa">فارسی</option>
+            <option value="ES">España</option>
+            <option value="CN">中国</option>
+          </select>
+        </div>
       </div>
       <div className="contentWrapper">
         <div className="infoContainer">

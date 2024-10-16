@@ -86,7 +86,7 @@
   color: #61dafb;
 }
 
-.language-selector {
+.language-selector , .language-selector-mobile {
   color: white;
 }
 
@@ -97,10 +97,10 @@
   border-radius: 5px;
   cursor: pointer;
 }
-language-selector__dropdown option{
+language-selector__dropdown option {
   color: transparent;
 }
-language-selector__dropdown option:hover{
+language-selector__dropdown option:hover {
   color: transparent;
 }
 
@@ -185,6 +185,12 @@ language-selector__dropdown option:hover{
 @media (max-width: 768px) {
   .navbar__links {
     display: none; /* Hide navbar links on mobile */
+  }
+  .language-selector {
+    display: none;
+  }
+  language-selector__dropdown-mobile {
+    display: block;
   }
 
   .hamburger {

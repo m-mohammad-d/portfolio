@@ -54,6 +54,7 @@ function Header() {
           >
             <option value="en">English</option>
             <option value="fa">فارسی</option>
+            <option value="ES">España</option>
           </select>
         </div>
       </nav>
@@ -69,6 +70,7 @@ function Header() {
           >
             <option value="en">English</option>
             <option value="fa">فارسی</option>
+            <option value="ES">España</option>
           </select>
         </div>
         <ul className="sidebar__links">

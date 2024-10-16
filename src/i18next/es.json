@@ -1,0 +1,74 @@
+{
+  "header": {
+    "greeting": "Hola, soy Mohammad",
+    "aboutMe": "Sobre mí",
+    "description": "Soy un desarrollador frontend con un gran interés en crear interfaces de usuario intuitivas y responsivas. Mi experiencia incluye trabajar con tecnologías web modernas como HTML, CSS y JavaScript, así como con frameworks populares como React. Estoy dedicado a mejorar la experiencia del usuario a través de un diseño bien elaborado y un código eficiente. Fuera del desarrollo, disfruto explorar nuevas tecnologías y contribuir a proyectos de código abierto."
+  },
+  "skills": {
+    "title": "Mis habilidades",
+    "react": {
+      "name": "React",
+      "description": "Una biblioteca de JavaScript para construir interfaces de usuario, especialmente aplicaciones de una sola página."
+    },
+    "javascript": {
+      "name": "JavaScript",
+      "description": "Un lenguaje de scripting versátil utilizado para crear contenido web dinámico e interactivo."
+    },
+    "typescript": {
+      "name": "TypeScript",
+      "description": "Un superconjunto de JavaScript que agrega tipos estáticos al lenguaje, mejorando la eficiencia en el desarrollo."
+    },
+    "git": {
+      "name": "Git",
+      "description": "Un sistema de control de versiones para rastrear cambios en el código fuente durante el desarrollo de software."
+    }
+  },
+  "projects": {
+    "title": "Mis proyectos",
+    "course": {
+      "name": ".curso",
+      "description": "DotCourse es una plataforma educativa integral diseñada para proporcionar una experiencia eficiente y fácil de usar para estudiantes, instructores y administradores. Presenta tableros dedicados para cada rol de usuario y una variedad de funcionalidades esenciales.",
+      "links": {
+        "demo": "Ver en línea",
+        "source": "Ver código fuente"
+      }
+    },
+    "nexium": {
+      "name": "Nexium",
+      "description": "Un entorno de escritorio basado en la web dinámico que brinda una experiencia similar a un escritorio en tu navegador. Nexium proporciona un espacio de trabajo fácil de usar e interactivo donde puedes gestionar aplicaciones, personalizar tu escritorio y crear y editar archivos sin problemas.",
+      "links": {
+        "demo": "Ver en línea",
+        "source": "Ver código fuente"
+      }
+    },
+    "azogeh": {
+      "name": "Azogeh",
+      "description": "Descubre la mejor selección de productos alimenticios en Azogeh. Desde productos frescos hasta especialidades gourmet, nuestra colección curada ofrece algo para cada paladar. Explora ingredientes de alta calidad que aportan un sabor excepcional y nutrición a tu cocina.",
+      "links": {
+        "demo": "Próximamente",
+        "source": "Ver código fuente"
+      }
+    },
+    "threeJs": {
+      "name": "Proyecto Three.js",
+      "description": "Un modelo 3D detallado de una espada histórica, meticulosamente recreado utilizando Three.js. Este proyecto muestra el diseño intrincado y la artesanía de la espada a través de una visualización 3D interactiva. Explora la belleza y complejidad de esta antigua arma en un entorno completamente inmersivo.",
+      "links": {
+        "demo": "Ver en línea",
+        "source": "Ver código fuente"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  }
+}

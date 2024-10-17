@@ -42,21 +42,21 @@ const ContactMe = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="github-logo.png" alt="GitHub" />
+          <img src="github.png" alt="GitHub" />
         </a>
         <a
           href="https://t.me/silver_shade1"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="telegram-logo.png" alt="Telegram" />
+          <img src="/telegram.png" alt="Telegram" />
         </a>
         <a
           href="https://linkedin.com/in/silver-shade-90b2a6302"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="linkedin-logo.png" alt="LinkedIn" />
+          <img src="linkedin.png" alt="LinkedIn" />
         </a>
       </div>
     </div>

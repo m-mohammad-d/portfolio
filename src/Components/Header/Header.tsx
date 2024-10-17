@@ -7,7 +7,9 @@ function Header() {
   const [selectedLanguage, setSelectedLanguage] = useState("en");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const handleLanguageChange = (event) => {
+  const handleLanguageChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
     const newLanguage = event.target.value;
     setSelectedLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);

@@ -7,7 +7,7 @@ function MySkill() {
 
   return (
     <div className="my-skill">
-      <h2 className="my-skill__title">{t("skills.title")}</h2>
+      <h2 className="my-skill__title line-text">{t("skills.title")}</h2>
       <div className="my-skill__skills">
         <div className="my-skill__skill">
           <img

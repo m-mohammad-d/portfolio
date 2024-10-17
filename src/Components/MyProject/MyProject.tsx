@@ -7,7 +7,7 @@ function MyProject() {
 
   return (
     <div className="my-project">
-      <h2 className="my-project__title">{t("projects.title")}</h2>
+      <h2 className="my-project__title line-text">{t("projects.title")}</h2>
       <div className="my-project__projects">
         <div className="my-project__project">
           <img

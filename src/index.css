@@ -20,7 +20,7 @@
 body {
   background-color: var(--background-color);
   color: var(--primary-text-color);
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 h1,
@@ -41,4 +41,45 @@ button {
 
 .border {
   border-bottom: 1px solid var(--border-color);
+}
+
+.line-text {
+  margin: 100px auto;
+  text-align: center;
+  font-size: 30px;
+  max-width: 600px;
+  position: relative;
+  color: var(--primary-text-color);
+  letter-spacing: 4px;
+}
+
+.line-text:before,
+.line-text:after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 5px;
+  background: var(--primary-text-color);
+  position: absolute;
+  top: 50%;
+  transition: width 0.4s ease;
+}
+
+.line-text:before {
+  left: 0;
+}
+
+.line-text:after {
+  right: 0;
+}
+
+.line-text:hover:before,
+.line-text:hover:after {
+  width: 180px;
+}
+.line-text span {
+  padding: 0 20px;
+  background-color: var(--background-color);
+  position: relative;
+  z-index: 1;
 }

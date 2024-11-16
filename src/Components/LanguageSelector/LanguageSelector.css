@@ -1,0 +1,71 @@
+.language-selector__button {
+  background-color: var(--bg-muted);
+  border: none;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.language-selector__button:hover {
+  background-color: var(--bg-1);
+}
+
+.flag-icon {
+  width: 18px;
+  height: 12px;
+}
+
+.dropdown-icon {
+  margin-left: 8px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 48px;
+  background-color: var(--bg-muted);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 140px;
+  border-radius: 8px; 
+  padding: 8px 0;
+  z-index: 1;
+  border: none;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.dropdown-item:hover {
+  background-color: var(--bg-1);
+}
+
+.dropdown-item:focus {
+  outline: none;
+}
+
+.language-selector {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .language-selector__button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .dropdown-menu {
+    width: 160px;
+  }
+}

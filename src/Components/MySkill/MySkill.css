@@ -4,8 +4,9 @@
 
 .my-skill__title {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 40px;
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+  color: var(--text-primary);
 }
 
 .my-skill__skills {
@@ -17,8 +18,10 @@
 .my-skill__skill {
   text-align: center;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
+  background-color: var(--bg-light);
+  transition: all 400ms ease-in;
 }
 
 .my-skill__skill img {
@@ -30,10 +33,17 @@
 .my-skill__skill h2 {
   font-size: 1.5rem;
   margin: 10px 0;
+  color: var(--text-primary);
 }
 
 .my-skill__skill p {
   font-size: 1rem;
+  color: var(--secondary-text-color);
+}
+
+.my-skill__skill:hover {
+  border-color: var(--header-color);
+  box-shadow: 0px 0px 7px  var(--header-color);
 }
 
 /* Small mobile devices */

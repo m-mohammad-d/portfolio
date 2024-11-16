@@ -1,11 +1,7 @@
-
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import translationEN from "./i18next/en.json";
 import translationFA from "./i18next/fa.json";
-import translationES from "./i18next/es.json";
-import translationCN from "./i18next/CN.json";
-
 
 const resources = {
   en: {
@@ -14,12 +10,16 @@ const resources = {
   fa: {
     translation: translationFA,
   },
-  ES: {
-    translation: translationES,
-  },
-  CN: {
-    translation: translationCN,
-  },
+};
+
+// تغییر زبان و direction
+const updateDirection = (lng: string) => {
+  const htmlTag = document.documentElement;
+  if (lng === "fa") {
+    htmlTag.setAttribute("dir", "rtl");
+  } else {
+    htmlTag.setAttribute("dir", "ltr");
+  }
 };
 
 i18n.use(initReactI18next).init({
@@ -30,5 +30,11 @@ i18n.use(initReactI18next).init({
     escapeValue: false,
   },
 });
+
+i18n.on("languageChanged", (lng) => {
+  updateDirection(lng);
+});
+
+updateDirection(i18n.language);
 
 export default i18n;

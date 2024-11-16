@@ -15,8 +15,9 @@
 .infoContainer {
   flex: 1;
   padding-right: 20px;
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-text-color);
 }
 
 .laptop {
@@ -27,12 +28,14 @@
 .infoContainer h1 {
   font-size: 2.5rem;
   margin: 0 0 10px 0;
+  color: var(--header-color);
 }
 
 .infoContainer p {
   font-size: 1.2rem;
   margin: 0 0 10px 0;
   line-height: 1.5;
+  color: var(--secondary-text-color);
 }
 
 .infoContainer p:last-child {
@@ -51,11 +54,11 @@
 
 .navbar__logo {
   font-size: 1.5rem;
-  color: white;
+  color: var(--primary-text-color);
   font-weight: bold;
 }
 .language-selector {
-  color: white;
+  color: var(--primary-text-color);
 }
 
 .language-selector__dropdown {

@@ -28,8 +28,6 @@ function Header() {
           >
             <option value="en">English</option>
             <option value="fa">فارسی</option>
-            <option value="ES">España</option>
-            <option value="CN">中国</option>
           </select>
         </div>
       </div>

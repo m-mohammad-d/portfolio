@@ -26,8 +26,16 @@ textarea {
   margin-top: 5px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  background-color: #28283b;
+  background-color: var(--bg-darker);
   color: var(--primary-text-color);
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--header-color);
+  outline: none;
+  box-shadow: 0px 0px 7px var(--header-color);
 }
 
 button {
@@ -37,11 +45,11 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s ease-in-out;
 }
 
 button:hover {
-  background-color: #ff564d;
+  background-color: var(--button-hover-color);
 }
 
 .social-icons {
@@ -53,7 +61,7 @@ button:hover {
 .social-icons a img {
   width: 40px;
   height: 40px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .social-icons a img:hover {

@@ -2,14 +2,15 @@
   height: 100vh;
   padding: 20px;
   gap: 8rem;
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
 }
 
 .contentWrapper {
   display: flex;
   justify-content: space-between;
-  flex: 1;
+  align-items: center;
   margin-top: 10rem;
+  gap: 6rem;
 }
 
 .infoContainer {

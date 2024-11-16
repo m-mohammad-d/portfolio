@@ -2,7 +2,7 @@ import "./Header.css";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Lottie from "lottie-react";
-import animationData from "../../asset/Animation - 1731765014676.json";
+import animationData from "../../asset/Animation - 1731768441890.json";
 
 function Header() {
   const { t, i18n } = useTranslation();

@@ -1,6 +1,8 @@
 import "./Header.css";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import Lottie from "lottie-react";
+import animationData from "../../asset/Animation - 1731765014676.json";
 
 function Header() {
   const { t, i18n } = useTranslation();
@@ -37,8 +39,12 @@ function Header() {
           <p>{t("header.aboutMe")}</p>
           <p>{t("header.description")}</p>
         </div>
-        <div className="imageContainer">
-          <img src="/Programmer-amico.svg" alt="Programmer" className="image" />
+        <div>
+          <Lottie
+            animationData={animationData}
+            className="laptop"
+            loop={true}
+          />
         </div>
       </div>
     </header>

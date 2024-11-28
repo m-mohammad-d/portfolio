@@ -84,6 +84,9 @@
   .my-skill__skill p {
     font-size: 0.95rem;
   }
+  .my-skill {
+    margin-top: 10rem;
+  }
 }
 
 /* Large tablets and small laptops */

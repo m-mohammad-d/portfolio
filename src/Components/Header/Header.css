@@ -1,5 +1,4 @@
 .header {
-  height: 100vh;
   padding: 20px;
   gap: 8rem;
   margin-bottom: 1rem;
@@ -107,6 +106,7 @@ language-selector__dropdown option:hover {
 @media (max-width: 768px) {
   .contentWrapper {
     flex-direction: column;
+    gap: 3rem;
   }
   .infoContainer h1 {
     font-size: 2rem; /* Adjust heading size */

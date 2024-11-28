@@ -10,7 +10,7 @@ function Header() {
   return (
     <header className="header">
       <div className="navbar">
-        <div className="navbar__logo">My Portfolio</div>
+        <div className="navbar__logo">m-mohammad-d</div>
         <LanguageSelector />
       </div>
       <div className="contentWrapper">

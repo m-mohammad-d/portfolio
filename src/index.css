@@ -1,20 +1,20 @@
 :root {
   /* Background Colors */
-  --background-color: rgb(35, 37, 46); 
-  --background-darker: #121212; 
-  --primary-text-color: #e0e0e0; 
+  --background-color: rgb(35, 37, 46);
+  --background-darker: #121212;
+  --primary-text-color: #e0e0e0;
   --secondary-text-color: #a0a0b0;
-  --highlight-text-color: #00b0ff; 
+  --highlight-text-color: #00b0ff;
 
-  --link-color: #00b0ff; 
-  --accent-color: #c0c0c0; 
-  --button-hover-color: #ff8c00; 
+  --link-color: #00b0ff;
+  --accent-color: #c0c0c0;
+  --button-hover-color: #ff8c00;
 
   --border-color: #2e2e3f;
-  --header-color: #ff8c00; 
+  --header-color: #ff8c00;
 
-  --light-color: #e6e6e6; 
-  --muted-color: rgba(255, 255, 255, 0.2); 
+  --light-color: #e6e6e6;
+  --muted-color: rgba(255, 255, 255, 0.2);
 
   --highlight-color: #ffcc00;
 }
@@ -23,6 +23,12 @@ body {
   background-color: var(--background-color);
   color: var(--primary-text-color);
   font-family: "Poppins", sans-serif;
+
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.2) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
 }
 
 h1,

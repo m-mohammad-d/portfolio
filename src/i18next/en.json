@@ -6,21 +6,97 @@
   },
   "skills": {
     "title": "My Skills",
-    "react": {
-      "name": "React",
-      "description": "A JavaScript library for building user interfaces, especially single-page applications."
+    "timeline": {
+      "title": "Learning Journey"
     },
-    "javascript": {
-      "name": "JavaScript",
-      "description": "A versatile scripting language used for creating dynamic and interactive web content."
+    "proficiency": {
+      "title": "Skill Proficiency"
     },
-    "typescript": {
-      "name": "TypeScript",
-      "description": "A superset of JavaScript that adds static types to the language, improving development efficiency."
+    "core": {
+      "title": "Core Frontend",
+      "html": {
+        "name": "HTML",
+        "description": "Semantic HTML markup and modern HTML5 features"
+      },
+      "css": {
+        "name": "CSS",
+        "description": "Advanced CSS styling, animations, and responsive design"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "description": "Modern JavaScript (ES6+) for dynamic and interactive web applications"
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "description": "Type-safe JavaScript development with enhanced tooling support"
+      }
     },
-    "git": {
-      "name": "Git",
-      "description": "A version control system for tracking changes in source code during software development."
+    "frameworks": {
+      "title": "Frameworks & Libraries",
+      "react": {
+        "name": "React",
+        "description": "Building efficient and reusable user interfaces"
+      },
+      "nextjs": {
+        "name": "Next.js",
+        "description": "React framework for production-grade applications"
+      },
+      "framer": {
+        "name": "Framer Motion",
+        "description": "Creating fluid animations and interactive UIs"
+      },
+      "tailwind": {
+        "name": "Tailwind CSS",
+        "description": "Utility-first CSS framework for rapid UI development"
+      }
+    },
+    "backend": {
+      "title": "Backend & APIs",
+      "graphql": {
+        "name": "GraphQL",
+        "description": "Efficient data querying and manipulation"
+      },
+      "rest": {
+        "name": "REST APIs",
+        "description": "Building and consuming RESTful web services"
+      },
+      "supabase": {
+        "name": "Supabase",
+        "description": "Open source Firebase alternative with powerful features"
+      }
+    },
+    "tools": {
+      "title": "Version Control & Tools",
+      "git": {
+        "name": "Git",
+        "description": "Version control and collaborative development"
+      },
+      "github": {
+        "name": "GitHub",
+        "description": "Project hosting, collaboration, and CI/CD workflows"
+      }
+    },
+    "performance": {
+      "title": "Performance & Optimization",
+      "webperf": {
+        "name": "Web Performance",
+        "description": "Optimizing load times and runtime performance"
+      },
+      "pwa": {
+        "name": "PWA",
+        "description": "Building Progressive Web Apps for offline capabilities"
+      }
+    },
+    "other": {
+      "title": "Other Skills",
+      "threejs": {
+        "name": "Three.js",
+        "description": "Creating immersive 3D experiences on the web"
+      },
+      "uiux": {
+        "name": "UI/UX Principles",
+        "description": "Designing intuitive and user-friendly interfaces"
+      }
     }
   },
   "projects": {

@@ -139,7 +139,16 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "send": "Send Message"
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! I'll get back to you soon.",
+    "error": "Failed to send message. Please try again.",
+    "errors": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "messageRequired": "Message is required"
+    }
   },
   "navbar": {
     "home": "Home",

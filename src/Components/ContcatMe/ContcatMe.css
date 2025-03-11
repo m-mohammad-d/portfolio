@@ -9,61 +9,124 @@
 .contact-form {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 label {
   color: var(--secondary-text-color);
+  font-size: 0.9rem;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 0.75rem;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   background-color: var(--bg-darker);
   color: var(--primary-text-color);
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 input:focus,
 textarea:focus {
   border-color: var(--header-color);
   outline: none;
-  box-shadow: 0px 0px 7px var(--header-color);
+  box-shadow: 0 0 0 2px rgba(156, 127, 240, 0.2);
+}
+
+input.error,
+textarea.error {
+  border-color: var(--error-color);
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
 }
 
 button {
-  background-color: var(--accent-color);
+  background-color: var(--header-color);
   color: var(--primary-text-color);
-  padding: 10px 20px;
+  padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-button:hover {
-  background-color: var(--button-hover-color);
+button:hover:not(:disabled) {
+  background-color: var(--button-hover);
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.submit-status {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.submit-status.success {
+  background-color: rgba(52, 233, 158, 0.1);
+  color: var(--success-color);
+  border: 1px solid var(--success-color);
+}
+
+.submit-status.error {
+  background-color: rgba(255, 94, 110, 0.1);
+  color: var(--error-color);
+  border: 1px solid var(--error-color);
 }
 
 .social-icons {
-  margin-top: 20px;
+  margin-top: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .social-icons a img {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   transition: transform 0.3s ease;
 }
 
-.social-icons a img:hover {
+.social-icons a:hover img {
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    margin-top: 4rem;
+    padding: 1rem;
+  }
+
+  .social-icons {
+    gap: 1.5rem;
+  }
+
+  .social-icons a img {
+    width: 28px;
+    height: 28px;
+  }
 }

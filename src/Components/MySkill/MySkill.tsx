@@ -1,6 +1,7 @@
 // src/components/MySkill.js
 import "./MySkill.css";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiFramer, SiTailwindcss, SiGraphql } from "react-icons/si";
 import { GiCube } from "react-icons/gi";
@@ -13,6 +14,30 @@ interface Skill {
 
 function MySkill() {
   const { t } = useTranslation();
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { 
+      opacity: 0,
+      y: 20
+    },
+    visible: { 
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5
+      }
+    }
+  };
 
   const skills: Skill[] = [
     {
@@ -73,30 +98,61 @@ function MySkill() {
   ];
 
   return (
-    <div className="my-skill">
-      <h2 className="my-skill__title">{t("skills.title")}</h2>
+    <motion.div 
+      className="my-skill"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      <motion.h2 
+        className="my-skill__title"
+        variants={itemVariants}
+      >
+        {t("skills.title")}
+      </motion.h2>
       
       <div className="my-skill__proficiency">
-        <h3 className="my-skill__proficiency-title">{t("skills.proficiency.title")}</h3>
-        <div className="my-skill__proficiency-grid">
+        <motion.h3 
+          className="my-skill__proficiency-title"
+          variants={itemVariants}
+        >
+          {t("skills.proficiency.title")}
+        </motion.h3>
+        <motion.div 
+          className="my-skill__proficiency-grid"
+          variants={containerVariants}
+        >
           {skills.map((skill) => (
-            <div key={skill.name} className="my-skill__proficiency-item">
+            <motion.div 
+              key={skill.name} 
+              className="my-skill__proficiency-item"
+              variants={itemVariants}
+              whileHover={{ scale: 1.02 }}
+            >
               <div className="my-skill__proficiency-header">
-                <skill.Icon className="my-skill__proficiency-icon" />
+                <motion.div
+                  whileHover={{ rotate: 360 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <skill.Icon className="my-skill__proficiency-icon" />
+                </motion.div>
                 <span className="my-skill__proficiency-name">{skill.name}</span>
                 <span className="my-skill__proficiency-value">{skill.proficiency}%</span>
               </div>
               <div className="my-skill__proficiency-bar-container">
-                <div 
+                <motion.div 
                   className="my-skill__proficiency-bar"
-                  style={{ width: `${skill.proficiency}%` }}
+                  initial={{ width: 0 }}
+                  whileInView={{ width: `${skill.proficiency}%` }}
+                  transition={{ duration: 1, delay: 0.2 }}
+                  viewport={{ once: true }}
                 />
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

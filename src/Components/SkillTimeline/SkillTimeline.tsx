@@ -96,7 +96,7 @@ function SkillTimeline() {
       <h2 className="skill-timeline__title">{t("skills.timeline.title")}</h2>
       
       <div className="skill-timeline__container">
-        {skills.map((skill, index) => (
+        {skills.map((skill) => (
           <div key={skill.name} className="skill-timeline__item">
             <div className="skill-timeline__icon-container">
               <skill.Icon className="skill-timeline__icon" />

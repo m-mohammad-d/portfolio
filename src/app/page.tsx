@@ -1,5 +1,9 @@
-import Image from "next/image";
+import { Hero } from "@/components/Hero";
 
 export default function Home() {
-  return <div className="bg-amber-400">hello world</div>;
+  return (
+    <div className="container mx-auto">
+      <Hero />
+    </div>
+  );
 }

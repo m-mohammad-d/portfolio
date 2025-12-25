@@ -97,7 +97,7 @@ export const Hero = () => {
               </TextAnimate>
             </motion.div>
           </div>
-          <div className="text-lg text-zinc-600 dark:text-zinc-400 my-6 md:my-10 font-bold">
+          <div className="text-lg text-zinc-900 dark:text-zinc-400 my-6 md:my-10 font-bold">
             React Enthusiast ⚛️ | Next.js Explorer 🚀
             <br />{" "}
             <span className="font-normal italic">

@@ -66,7 +66,9 @@ export default function RootLayout({
       <body
         className={`${exo2.variable} antialiased scroll-smooth  dark:bg-[url('/topography.svg')] bg-repeat w-full max-w-dvw overflow-x-hidden`}
       >
-        <SmoothCursor />
+        <div className="md:block hidden">
+          <SmoothCursor />
+        </div>
 
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />

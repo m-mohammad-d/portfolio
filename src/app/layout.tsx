@@ -64,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${exo2.variable} antialiased scroll-smooth w-full max-w-dvw overflow-x-hidden`}
+        className={`${exo2.variable} antialiased scroll-smooth  bg-[url('/topography.svg')] bg-repeat w-full max-w-dvw overflow-x-hidden`}
       >
         <SmoothCursor />
 

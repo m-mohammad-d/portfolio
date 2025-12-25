@@ -157,7 +157,11 @@
     @apply bg-background text-foreground;
   }
 }
-
+html,
+body {
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+}
 * {
   cursor: none !important;
 }
@@ -166,4 +170,25 @@ input,
 textarea,
 select {
   cursor: text !important;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4c5154;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #69c9d0;
 }

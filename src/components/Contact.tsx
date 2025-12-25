@@ -59,7 +59,7 @@ const ContactSection = () => {
             {/* Links */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a
-                href="https://github.com/"
+                href="https://github.com/m-mohammad-d"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-3 px-6 py-4 rounded-xl border border-border bg-background hover:border-primary hover:shadow-lg transition-all"

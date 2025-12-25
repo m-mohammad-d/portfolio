@@ -83,7 +83,7 @@ const containerVariants = {
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section id="work" className="relative w-full py-32 overflow-hidden">
+    <section id="project" className="relative w-full py-32 overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.div
           variants={containerVariants}

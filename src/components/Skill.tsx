@@ -49,7 +49,7 @@ const containerVariants = {
 export default function Skill() {
   return (
     <section
-      id="Skill"
+      id="skills"
       className=" mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20"
     >
       <motion.div

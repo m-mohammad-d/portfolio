@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import { Exo_2 } from "next/font/google";
+import { SmoothCursor } from "@/components/magicui/SmoothCursor";
 
 const exo2 = Exo_2({
   subsets: ["latin", "vietnamese", "cyrillic"],
@@ -65,6 +66,8 @@ export default function RootLayout({
       <body
         className={`${exo2.variable} antialiased scroll-smooth w-full max-w-dvw overflow-x-hidden`}
       >
+        <SmoothCursor />
+
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
           <main>{children}</main>

@@ -157,3 +157,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+* {
+  cursor: none !important;
+}
+
+input,
+textarea,
+select {
+  cursor: text !important;
+}
